@@ -94,27 +94,27 @@ ComputerGraphicsFrame::ComputerGraphicsFrame(wxWindow* parent,wxWindowID id)
     wxMenuBar* MenuBar1;
     wxMenu* Menu2;
 
-    Create(parent, wxID_ANY, _("Ö±ÏßÓë¶à±ßĞÎ»æÖÆ"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    Create(parent, wxID_ANY, _("ç›´çº¿ä¸å¤šè¾¹å½¢ç»˜åˆ¶"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     SetClientSize(wxSize(1000,700));
     SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_MENU));
-    Button1 = new wxButton(this, ID_BUTTON1, _("´´½¨"), wxPoint(370,52), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
-    Button2 = new wxButton(this, ID_BUTTON2, _("É¾³ıÖ±Ïß"), wxPoint(780,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
+    Button1 = new wxButton(this, ID_BUTTON1, _("åˆ›å»º"), wxPoint(370,52), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
+    Button2 = new wxButton(this, ID_BUTTON2, _("åˆ é™¤ç›´çº¿"), wxPoint(780,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON2"));
     StaticText1 = new wxStaticText(this, ID_STATICTEXT1, _("x1"), wxPoint(20,20), wxDefaultSize, 0, _T("ID_STATICTEXT1"));
     StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("x2"), wxPoint(20,60), wxDefaultSize, 0, _T("ID_STATICTEXT2"));
     StaticText3 = new wxStaticText(this, ID_STATICTEXT3, _("y1"), wxPoint(200,20), wxDefaultSize, 0, _T("ID_STATICTEXT3"));
     StaticText4 = new wxStaticText(this, ID_STATICTEXT4, _("y2"), wxPoint(200,60), wxDefaultSize, 0, _T("ID_STATICTEXT4"));
     TextCtrl1 = new wxTextCtrl(this, ID_TEXTCTRL1, wxEmptyString, wxPoint(60,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
-    TextCtrl1->SetToolTip(_("ÆğÊ¼µãx×ø±ê"));
-    TextCtrl1->SetHelpText(_("ÆğÊ¼µãx×ø±ê"));
+    TextCtrl1->SetToolTip(_("èµ·å§‹ç‚¹xåæ ‡"));
+    TextCtrl1->SetHelpText(_("èµ·å§‹ç‚¹xåæ ‡"));
     TextCtrl2 = new wxTextCtrl(this, ID_TEXTCTRL2, wxEmptyString, wxPoint(240,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
-    TextCtrl2->SetToolTip(_("ÆğÊ¼µãy×ø±ê"));
-    TextCtrl2->SetHelpText(_("ÆğÊ¼µãy×ø±ê"));
+    TextCtrl2->SetToolTip(_("èµ·å§‹ç‚¹yåæ ‡"));
+    TextCtrl2->SetHelpText(_("èµ·å§‹ç‚¹yåæ ‡"));
     TextCtrl3 = new wxTextCtrl(this, ID_TEXTCTRL3, wxEmptyString, wxPoint(60,56), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL3"));
-    TextCtrl3->SetToolTip(_("ÖÕµãx×ø±ê"));
-    TextCtrl3->SetHelpText(_("ÖÕµãx×ø±ê"));
+    TextCtrl3->SetToolTip(_("ç»ˆç‚¹xåæ ‡"));
+    TextCtrl3->SetHelpText(_("ç»ˆç‚¹xåæ ‡"));
     TextCtrl4 = new wxTextCtrl(this, ID_TEXTCTRL4, wxEmptyString, wxPoint(240,56), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL4"));
-    TextCtrl4->SetToolTip(_("ÖÕµãy×ø±ê"));
-    TextCtrl4->SetHelpText(_("ÖÕµãy×ø±ê"));
+    TextCtrl4->SetToolTip(_("ç»ˆç‚¹yåæ ‡"));
+    TextCtrl4->SetHelpText(_("ç»ˆç‚¹yåæ ‡"));
     SashWindow1 = new wxSashWindow(this, ID_SASHWINDOW1, wxPoint(0,100), wxSize(1000,500), wxCLIP_CHILDREN, _T("ID_SASHWINDOW1"));
     SashWindow1->Disable();
     SashWindow1->SetForegroundColour(wxColour(255,255,255));
@@ -124,18 +124,18 @@ ComputerGraphicsFrame::ComputerGraphicsFrame(wxWindow* parent,wxWindowID id)
     SashWindow1->SetSashVisible(wxSASH_LEFT,   false);
     SashWindow1->SetSashVisible(wxSASH_RIGHT,  false);
     TextCtrl5 = new wxTextCtrl(this, ID_TEXTCTRL5, wxEmptyString, wxPoint(640,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL5"));
-    TextCtrl5->SetToolTip(_("ÊäÈëÒªÉ¾³ıµÚ¼¸ÌõÖ±Ïß"));
-    TextCtrl5->SetHelpText(_("ÊäÈëÒªÉ¾³ıµÚ¼¸ÌõÖ±Ïß"));
+    TextCtrl5->SetToolTip(_("è¾“å…¥è¦åˆ é™¤ç¬¬å‡ æ¡ç›´çº¿"));
+    TextCtrl5->SetHelpText(_("è¾“å…¥è¦åˆ é™¤ç¬¬å‡ æ¡ç›´çº¿"));
     ColourPickerCtrl1 = new wxColourPickerCtrl(this, ID_COLOURPICKERCTRL1, wxColour(0,0,0), wxPoint(365,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_COLOURPICKERCTRL1"));
-    StaticText5 = new wxStaticText(this, ID_STATICTEXT5, _("ÒÑ»æÖÆ0ÌõÖ±Ïß"), wxPoint(32,624), wxSize(120,18), 0, _T("ID_STATICTEXT5"));
-    StaticText6 = new wxStaticText(this, ID_STATICTEXT6, _("¿ÉÖ±½Óµã»÷»­²¼»æÖÆÖ±Ïß£¬¹´Ñ¡»æÖÆ¶à±ßĞÎÔò»æÖÆ¶à±ßĞÎ"), wxPoint(560,624), wxDefaultSize, 0, _T("ID_STATICTEXT6"));
+    StaticText5 = new wxStaticText(this, ID_STATICTEXT5, _("å·²ç»˜åˆ¶0æ¡ç›´çº¿"), wxPoint(32,624), wxSize(120,18), 0, _T("ID_STATICTEXT5"));
+    StaticText6 = new wxStaticText(this, ID_STATICTEXT6, _("å¯ç›´æ¥ç‚¹å‡»ç”»å¸ƒç»˜åˆ¶ç›´çº¿ï¼Œå‹¾é€‰ç»˜åˆ¶å¤šè¾¹å½¢åˆ™ç»˜åˆ¶å¤šè¾¹å½¢"), wxPoint(560,624), wxDefaultSize, 0, _T("ID_STATICTEXT6"));
     TextCtrl6 = new wxTextCtrl(this, ID_TEXTCTRL6, wxEmptyString, wxPoint(640,56), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL6"));
-    TextCtrl6->SetToolTip(_("ÊäÈëÒªÉ¾³ıµÚ¼¸¸ö¶à±ßĞÎ"));
-    CheckBox1 = new wxCheckBox(this, ID_CHECKBOX1, _("´´½¨¶à±ßĞÎ"), wxPoint(500,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX1"));
+    TextCtrl6->SetToolTip(_("è¾“å…¥è¦åˆ é™¤ç¬¬å‡ ä¸ªå¤šè¾¹å½¢"));
+    CheckBox1 = new wxCheckBox(this, ID_CHECKBOX1, _("åˆ›å»ºå¤šè¾¹å½¢"), wxPoint(500,16), wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX1"));
     CheckBox1->SetValue(false);
-    Button3 = new wxButton(this, ID_BUTTON3, _("Íê³É¶à±ßĞÎ"), wxPoint(500,52), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON3"));
-    Button4 = new wxButton(this, ID_BUTTON4, _("É¾³ı¶à±ßĞÎ"), wxPoint(780,56), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON4"));
-    StaticText7 = new wxStaticText(this, ID_STATICTEXT7, _("ÒÑ»æÖÆ0¸ö¶à±ßĞÎ"), wxPoint(200,624), wxDefaultSize, 0, _T("ID_STATICTEXT7"));
+    Button3 = new wxButton(this, ID_BUTTON3, _("å®Œæˆå¤šè¾¹å½¢"), wxPoint(500,52), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON3"));
+    Button4 = new wxButton(this, ID_BUTTON4, _("åˆ é™¤å¤šè¾¹å½¢"), wxPoint(780,56), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON4"));
+    StaticText7 = new wxStaticText(this, ID_STATICTEXT7, _("å·²ç»˜åˆ¶0ä¸ªå¤šè¾¹å½¢"), wxPoint(200,624), wxDefaultSize, 0, _T("ID_STATICTEXT7"));
     MenuBar1 = new wxMenuBar();
     Menu1 = new wxMenu();
     MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
@@ -202,12 +202,12 @@ void ComputerGraphicsFrame::OnButton1Click1(wxCommandEvent& event)
             creat_line(x1, y1, x2, y2, ColourPickerCtrl1 -> wxColourPickerCtrl::GetColour().GetRGB());
             std::stringstream ss;
             std::string s;
-            ss << "ÒÑ»æÖÆ" << line_count << "ÌõÖ±Ïß";
+            ss << "å·²ç»˜åˆ¶" << line_count << "æ¡ç›´çº¿";
             ss >> s;
             StaticText5 -> SetLabel(s);
         }
         else
-            wxMessageBox("x×ø±êÎª0-1000£¬y×ø±êÎª0-500", _("Error"));
+            wxMessageBox("xåæ ‡ä¸º0-1000ï¼Œyåæ ‡ä¸º0-500", _("Error"));
     }
     else
     {
@@ -233,7 +233,7 @@ void ComputerGraphicsFrame::OnButton1Click1(wxCommandEvent& event)
             TextCtrl2 -> Enable(FALSE);
         }
         else
-            wxMessageBox("x×ø±êÎª0-1000£¬y×ø±êÎª0-500", _("Error"));
+            wxMessageBox("xåæ ‡ä¸º0-1000ï¼Œyåæ ‡ä¸º0-500", _("Error"));
     }
 }
 
@@ -255,12 +255,12 @@ void ComputerGraphicsFrame::OnButton2Click(wxCommandEvent& event)
         delete_line(delete_num);
         std::stringstream ss;
         std::string s;
-        ss << "ÒÑ»æÖÆ" << line_count << "ÌõÖ±Ïß";
+        ss << "å·²ç»˜åˆ¶" << line_count << "æ¡ç›´çº¿";
         ss >> s;
         StaticText5 -> SetLabel(s);
     }
     else
-        wxMessageBox("²¢Ã»ÓĞÄÇÃ´¶àÖ±Ïß", _("Error"));
+        wxMessageBox("å¹¶æ²¡æœ‰é‚£ä¹ˆå¤šç›´çº¿", _("Error"));
 }
 
 void ComputerGraphicsFrame::OnColourPickerCtrl1ColourChanged(wxColourPickerEvent& event)
@@ -294,7 +294,7 @@ void ComputerGraphicsFrame::OnSashWindow1SashDragged2(wxMouseEvent& event)
                            ColourPickerCtrl1 -> wxColourPickerCtrl::GetColour().GetRGB());
                 std::stringstream ss;
                 std::string s;
-                ss << "ÒÑ»æÖÆ" << line_count << "ÌõÖ±Ïß";
+                ss << "å·²ç»˜åˆ¶" << line_count << "æ¡ç›´çº¿";
                 ss >> s;
                 StaticText5 -> SetLabel(s);
                 ClickCount = FALSE;
@@ -341,7 +341,7 @@ void ComputerGraphicsFrame::OnButton3Click(wxCommandEvent& event)
         complete_polygon(ColourPickerCtrl1 -> wxColourPickerCtrl::GetColour().GetRGB());
         std::stringstream ss;
         std::string s;
-        ss << "ÒÑ»æÖÆ" << polygon_count << "¸ö¶à±ßĞÎ";
+        ss << "å·²ç»˜åˆ¶" << polygon_count << "ä¸ªå¤šè¾¹å½¢";
         ss >> s;
         StaticText7 -> SetLabel(s);
         ClickCount = FALSE;
@@ -351,7 +351,7 @@ void ComputerGraphicsFrame::OnButton3Click(wxCommandEvent& event)
         complete_polygon(ColourPickerCtrl1 -> wxColourPickerCtrl::GetColour().GetRGB());
         std::stringstream ss;
         std::string s;
-        ss << "ÒÑ»æÖÆ" << polygon_count << "¸ö¶à±ßĞÎ";
+        ss << "å·²ç»˜åˆ¶" << polygon_count << "ä¸ªå¤šè¾¹å½¢";
         ss >> s;
         StaticText7 -> SetLabel(s);
         TextCtrl1 -> Enable(TRUE);
@@ -359,7 +359,7 @@ void ComputerGraphicsFrame::OnButton3Click(wxCommandEvent& event)
     }
     else
     {
-        wxMessageBox("ÖÁÉÙĞèÒªÈı¸öµã²ÅÄÜÍê³É¶à±ßĞÎ", _("Error"));
+        wxMessageBox("è‡³å°‘éœ€è¦ä¸‰ä¸ªç‚¹æ‰èƒ½å®Œæˆå¤šè¾¹å½¢", _("Error"));
     }
 }
 
@@ -373,10 +373,10 @@ void ComputerGraphicsFrame::OnButton4Click(wxCommandEvent& event)
         delete_polygon(delete_num);
         std::stringstream ss;
         std::string s;
-        ss << "ÒÑ»æÖÆ" << polygon_count << "¸ö¶à±ßĞÎ";
+        ss << "å·²ç»˜åˆ¶" << polygon_count << "ä¸ªå¤šè¾¹å½¢";
         ss >> s;
         StaticText7 -> SetLabel(s);
     }
     else
-        wxMessageBox("²¢Ã»ÓĞÄÇÃ´¶à¶à±ßĞÎ", _("Error"));
+        wxMessageBox("å¹¶æ²¡æœ‰é‚£ä¹ˆå¤šå¤šè¾¹å½¢", _("Error"));
 }
