@@ -1,7 +1,7 @@
 /***************************************************************
  * Name:      ComputerGraphicsApp.cpp
  * Purpose:   Code for Application Class
- * Author:    hyh (hyh199474@icloud.com)
+ * Author:    hyh (hyh199474 @icloud.com)
  * Created:   2016-05-10
  * Copyright: hyh ()
  * License:
